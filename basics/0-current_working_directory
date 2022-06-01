@@ -1,3 +1,2 @@
-script.sh
 #!/bin/bash
 ls -l
