@@ -1,2 +1,3 @@
 #!/bin/bash
-$ wc -l file
+wc -l file
+echo 'Hello Word' > 0-hello_world
