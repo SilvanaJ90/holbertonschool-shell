@@ -1,1 +1,4 @@
 #!/bin/bash
+BEST='School'
+echo $BEST
+exporta BEST
