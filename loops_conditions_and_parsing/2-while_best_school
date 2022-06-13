@@ -2,7 +2,8 @@
 #command while
 
 i=10
-while [ $i -gr 0 ];
+
+while [ $1 -gr 0 ]
         do
         echo 'Best School'
         i=$(($i -1))
