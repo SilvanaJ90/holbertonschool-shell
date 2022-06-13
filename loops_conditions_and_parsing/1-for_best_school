@@ -1,7 +1,9 @@
 #!/usr/bin/env bash
-#Script that displays Best School 10 times.
+#Script that displays Best School 10 times. --for
 
-for (( c=1; c<=10; c++ ));
+i=10
+while [ $i -gr 0 ]
 	do
-	echo 'Best School';
+	echo 'Best School'
+	i=$((i -1))
 done
