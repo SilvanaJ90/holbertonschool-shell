@@ -3,7 +3,7 @@
 
 i=10
 
-while [ $1 -gr 0 ]
+while [ $i -gt 0 ]
         do
         echo 'Best School'
         i=$(($i -1))
