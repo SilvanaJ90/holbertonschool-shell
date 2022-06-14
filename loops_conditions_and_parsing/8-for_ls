@@ -11,5 +11,5 @@
 
 for i in  * ; 
     do
-      echo $i | cut -f 2 -d '-'
+      echo $i | cut -f 2 -d "-"
     done
