@@ -1,11 +1,6 @@
 #!/usr/bin/env bash
 
-runtime="5 minute"
-endtime=$(date -ud "$runtime" +%s)
-
-while [[ $(date -u +%s) -le $endtime ]]
-do
-    echo "Time Now: `date +%H:%M:%S`"
-    echo "Sleeping for 1 minute"
-    sleep 1m
+for i in (ls); do
+    echo $i 
+    grep -c "^>" $i
 done

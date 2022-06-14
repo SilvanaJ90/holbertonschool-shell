@@ -1,7 +1,10 @@
 #!/usr/bin/env bash
 #for ls
 
-for i in $(ls); do
-	echo $i
-	find . -type d ! -path . -print | wc -l
-done
+#for i in $(ls); do
+	#echo $i
+	
+	#find . -type f | cut -d '/' -f 1 $i 
+#done
+
+for i in $(ls); do echo "$i"; done;
