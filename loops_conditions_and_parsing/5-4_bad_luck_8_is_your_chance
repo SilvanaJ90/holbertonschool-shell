@@ -1,19 +1,18 @@
 #!/usr/bin/env bash
 # bad luck, good luck and best School
 
-
 i=10
+while [ $i -gt 0 ];
+do
 
-while [ $i -gt 0 ];do
-	echo "Best School"
-	if [[ $i -eq 8 ]];then
-        	echo "bad luck"
-    	elif [[ $i -eq 5 ]];then
-            	echo "good luck"
+	if [[ $i -eq 7 ]];then
+        echo "bad luck"
+    elif [[ $i -eq 3 ]];then
+        echo "good luck"
+        else
+		echo "Best School"
+
         
-        fi
-	
+	fi
 i=$((i-1))
-
-done 
-
+done
