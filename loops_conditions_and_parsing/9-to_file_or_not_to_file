@@ -1,1 +1,28 @@
 #!/usr/bin/env bash
+#command if, else
+
+file=school
+dir=(find . -name school)
+
+
+if [ $dir -ne ./school ]; then
+		echo "school does not file exists"
+	else
+		echo "school file exist" 
+	
+	if [ -s $file ]; then
+		echo "school file is not empty"
+		echo "school is a regular file"
+		
+	else
+		echo "school file is empty"
+	fi
+
+		
+fi
+
+
+
+
+
+
