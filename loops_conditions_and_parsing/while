@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+i=10
+
+while [ $i -gt 0 ]
+        do
+       
+if [ $i -lt 9 ]; then
+	echo "Best School"
+else
+	echo "Hi"
+	i=$((i -1))
+fi
+        done
+
