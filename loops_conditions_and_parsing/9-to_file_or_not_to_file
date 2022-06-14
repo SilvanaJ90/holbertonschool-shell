@@ -16,6 +16,7 @@ if [ $dir -ne ./school ]; then
 		
 	else
 		echo "school file is empty"
+		echo "school is a regular file"
 	fi
 
 		
