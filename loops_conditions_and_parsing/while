@@ -1,15 +1,11 @@
 #!/usr/bin/env bash
 
-i=10
+runtime="5 minute"
+endtime=$(date -ud "$runtime" +%s)
 
-while [ $i -gt 0 ]
-        do
-       
-if [ $i -lt 9 ]; then
-	echo "Best School"
-else
-	echo "Hi"
-	i=$((i -1))
-fi
-        done
-
+while [[ $(date -u +%s) -le $endtime ]]
+do
+    echo "Time Now: `date +%H:%M:%S`"
+    echo "Sleeping for 1 minute"
+    sleep 1m
+done
