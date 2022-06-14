@@ -7,4 +7,9 @@
 	#find . -type f | cut -d '/' -f 1 $i 
 #done
 
-for i in $(ls); do echo "$i"; done;
+#for i in $(ls); do echo "$i"; done;
+
+for i in  * ; 
+    do
+      echo $i | cut -f 2 -d '-'
+    done
