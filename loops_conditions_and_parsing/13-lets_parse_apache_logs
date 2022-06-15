@@ -2,4 +2,4 @@
 #apache consulta ip
 
 
-awk -F "-" '{ print $1 }' apache-access.log
+awk '{ print $1 " " $9 }' apache-access.log
