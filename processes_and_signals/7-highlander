@@ -1,2 +1,16 @@
 #!/usr/bin/env bash
-#
+#scrip infinito con 2 sleep en cada interacion
+
+trap "echo 'I am invincible!!!'" SIGTERM SIGINT
+
+i=1
+
+for (( i=1; i>0; i++));
+do
+
+	echo "To infinity and beyond"
+	sleep 2	
+
+
+done
+
