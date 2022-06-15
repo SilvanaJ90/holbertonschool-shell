@@ -1,7 +1,7 @@
 #!/usr/bin/env bash
 #command read -while
 
-cat /etc/passwd | while read - -r LREAD
+cat /etc/passwd | while read LREAD
 
 do
 
