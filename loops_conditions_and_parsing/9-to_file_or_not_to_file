@@ -2,28 +2,27 @@
 #command if, else
 
 
-con="fin . -name school"
+
 file="school"
-if [ $con -eq './school' ]; then
+if [ $con -e "$file" ]; then
 		echo "school file exists"
-	else
-		echo "school file does not exist" 
 	
-	else [ -s $file ]; then
+	if [ -s "$file" ]; then
 		echo "school file is not empty"
-	fi
+	
 		
 	else
 		echo "school file is empty"
 		
 	fi
 
-	else [ $file ]; then
+	if [ -f "$file" ]; then
                 echo "school is a regular file"
 
         fi
 
-
+else
+	echo "school file does not exist"
 		
 fi
 
