@@ -4,7 +4,7 @@
 
 
 file="school"
-if [ $con -e "$file" ]; then
+if [ -e "$file" ]; then
 		echo "school file exists"
 	
 	if [ -s "$file" ]; then
