@@ -1,4 +1,4 @@
 #!/usr/bin/env bash
 #ps en formato largo
 
-ps -f
+pgrep -u root bash
