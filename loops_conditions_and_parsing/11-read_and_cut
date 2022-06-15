@@ -4,7 +4,7 @@
 file="/etc/passwd"
 
 
-while read LREAD
+while read -r LREAD
 
 do
 
