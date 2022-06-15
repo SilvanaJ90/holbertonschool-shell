@@ -1,2 +1,9 @@
 #!/usr/bin/env bash
-#
+# to infinity and beyond 4-to_infinity_and_beyond
+
+for (( i=1; i>0; i++ ));
+do
+	echo "To infinity and beyond"
+	kill -9 PID
+
+done 
