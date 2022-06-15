@@ -1,12 +1,14 @@
 #!/usr/bin/env bash
 #etc/passwd history
 
-file="/etc/passwd"
-while IFS=: read -r username password userid groupid comment homedir cmdshell
-do
-  echo "$username"
-  echo " $userid"
-  echo "$comment"
-  echo "$homedir"
 
-done < $file
+file="/etc/passwd"
+
+
+while IFS=: read -r LREAD
+
+do
+
+    echo "${LREAD}"
+
+done < ${file}
