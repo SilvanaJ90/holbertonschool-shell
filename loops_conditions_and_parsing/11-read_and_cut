@@ -1,11 +1,14 @@
 #!/usr/bin/env bash
 #command read -while
 
-cat /etc/passwd | while -read LREAD
+file="/etc/passwd"
+
+
+while read LREAD
 
 do
 
     echo "${LREAD}"
 
-done
+done < ${file}
 
