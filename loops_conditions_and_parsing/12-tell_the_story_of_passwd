@@ -4,5 +4,9 @@
 file="/etc/passwd"
 while IFS=: read -r username password userid groupid comment homedir cmdshell
 do
-  echo "$username, $userid, $comment $homedir"
+  echo "$username"
+  echo " $userid"
+  echo "$comment"
+  echo "$homedir"
+
 done < $file
