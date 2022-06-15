@@ -1,2 +1,4 @@
 #!/usr/bin/env bash
-#
+# running processes
+
+ps u
