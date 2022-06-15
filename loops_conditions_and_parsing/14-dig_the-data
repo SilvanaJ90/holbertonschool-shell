@@ -2,7 +2,4 @@
 #apache consulta ip
 
 
-awk -F'[ "]+' '$7 == "/" { ipcount[$1]++ }
- END { for (i in ipcount) {
-
-{ print $1 " " $9 } } }' apache-access.log
+awk '{ print $1 " " $9 }' apache-access.log | sort | uniq -c | sort -nr 
