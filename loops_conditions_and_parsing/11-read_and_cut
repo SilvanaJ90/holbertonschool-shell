@@ -5,7 +5,7 @@ cat /etc/passwd | while read - -r LREAD
 
 do
 
-    echo ${LREAD}
+    echo "${LREAD}"
 
 done
 
