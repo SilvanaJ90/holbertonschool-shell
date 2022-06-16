@@ -1,2 +1,17 @@
 #!/usr/bin/env bash
-#
+#9
+
+trap 'echo I hate the kill command; rm /var/run/myscript.pid; exit' SIGTERM
+trap "echo Y U no love me?!" SIGINT
+trap 'rm /var/run/myscript.pid; exit' SIGQUIT
+echo $$ > "/var/run/myscript.pid"
+
+
+for (( i=1; i>0; i++));
+do
+
+	echo "To infinity and beyond"
+	sleep 2
+
+
+done
