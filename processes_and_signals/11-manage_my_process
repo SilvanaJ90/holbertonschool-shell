@@ -1,8 +1,6 @@
 #!/usr/bin/env bash
 # to infinity and beyond 
 
-. /lib/lsb/init-functions
-
 
 filepid="/var/run/my_process.pid"
 
