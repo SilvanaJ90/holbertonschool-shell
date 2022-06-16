@@ -13,7 +13,7 @@ start() {
 stop() {
 	
 	#mata el proceso y elimina el archivo my process
-	sudo pkill -f manage_my_process && rm "$filepid"
+	sudo kill -15 "$(cat "$filepid")" && rm -f "$filepid"
 }
 
 
