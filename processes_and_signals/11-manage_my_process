@@ -1,0 +1,45 @@
+#!/usr/bin/env bash
+# to infinity and beyond 
+
+i=1
+
+filetem_create()
+{
+	#crea el archivo myscript
+	./manage_my_process &
+	echo $$ > "/var/run/myscript.pid"
+}
+
+killerfile()
+{
+	
+	#mata el proceso y elimina el archivo my process
+	./manage_my_process stop
+	rm /var/run/my_process.pid; exit
+}
+
+for  (( i=1; i>0; i++));
+do
+
+case $i in 
+	
+start )	 echo "manage_my_process started"
+	filetem_create
+	 ;;
+
+ stop ) echo "manage_my_process stopped"
+	killerfile
+	;;
+	
+
+restart ) echo "manage_my_process restarted"
+	  killerfile
+	  filetem_create
+	  ;;
+
+*) echo "Usage: manage_my_process {start|stop|restart}"
+	;;
+
+esac
+
+done
