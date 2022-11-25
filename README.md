@@ -9,4 +9,4 @@
 
 [0x01-permissions](https://github.com/SilvanaJ90/holbertonschool-shell/tree/master/0x01-permissions)
 
-[0x02-io_redirections_and_filters](https://github.com/SilvanaJ90/holbertonschool-shell/tree/master/0x01-io_redirections_and_filters)
+[0x02-io_redirections_and_filters](https://github.com/SilvanaJ90/holbertonschool-shell/tree/master/0x02-io_redirections_and_filters)
