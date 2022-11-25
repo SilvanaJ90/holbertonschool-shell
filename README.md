@@ -5,4 +5,6 @@
 
 ## Projects:
 
-[0x00-basics](https://github.com/SilvanaJ90/holbertonschool-shell/tree/master/0x00-basics).
+[0x00-basics](https://github.com/SilvanaJ90/holbertonschool-shell/tree/master/0x00-basics)
+
+[0x01-permissions](https://github.com/SilvanaJ90/holbertonschool-shell/tree/master/0x01-permissions)
